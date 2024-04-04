@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova&display=swap');
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+#productUpdate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadeInFromRight 1s ease-in-out;
+    transition: color 0.5s ease;
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
